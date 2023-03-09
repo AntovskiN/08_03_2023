@@ -1,0 +1,19 @@
+INSERT INTO "IdentityCard" VALUES
+(newid(),'Nikola', 'Antovski', '2002-12-19', 'M', 'Mono 3', 'nikola.antovski@mail.com'),
+(newid(),'Iva', 'Turalija', '1998-08-08', 'F', 'Mono 3', 'iva.turalija@mail.com'),
+(newid(),'Matej', 'Antovski', '2013-03-21', 'M', 'Mono 7', 'matej.antovski@mail.com')
+(newid(),'Mateja', 'Antovska', '2015-02-24', 'F', 'Mono 7', 'mateja.antovska@mail.com'));
+
+SELECT * FROM "IdentityCard";
+
+SELECT * FROM "IdentityCard"
+WHERE "Name" like "%Nik%";
+
+SELECT * FROM "IdenityCard"
+WHERE "Gender" = "M";
+
+UPDATE "IdentityCard"
+SET "LastName" = 'Antovska'
+WHERE "LastName" = 'Turalija'
+
+DELETE FROM "IdentityCard" WHERE "FirstName" = 'Mateja'
