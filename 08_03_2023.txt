@@ -4,6 +4,12 @@ INSERT INTO "IdentityCard" VALUES
 (newid(),'Matej', 'Antovski', '2013-03-21', 'M', 'Mono 7', 'matej.antovski@mail.com')
 (newid(),'Mateja', 'Antovska', '2015-02-24', 'F', 'Mono 7', 'mateja.antovska@mail.com'));
 
+INSERT INTO "Movie" VALUES
+(newid(), 'Scream', 'Horror', '7.8', 'Wes Craven', 'USA', '1996', '5.20', '30'),
+(newid(), 'Warcraft', 'Fantasy', '6.7', 'Duncan Jones', 'USA', '2016', '8.50', '30'),
+(newid(), 'Ant-Man', 'Action', '7.3', 'Peyton Reed', 'USA', '2015', '6.30', '30'),
+(newid(), 'Parasite', 'Horror', '8.5', 'Bong Joon Ho', 'South Korea', '2019', '10.80', '30'));
+
 SELECT * FROM "IdentityCard";
 
 SELECT * FROM "IdentityCard"
